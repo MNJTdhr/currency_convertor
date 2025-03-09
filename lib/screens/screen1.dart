@@ -49,8 +49,12 @@ class _Screen1State extends State<Screen1> {
                 child: Column(
                   children: [
                     TextField(
-                      decoration: InputDecoration(),
-                      style: TextStyle(color: Colors.blueGrey),
+                      decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.monetization_on),
+                        hintText: "Enter USD",
+                        hintStyle: TextStyle(color: Colors.white),
+                      ),
+                      style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.left,
                     ),
                     SizedBox(height: 20),
