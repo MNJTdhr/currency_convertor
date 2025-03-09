@@ -48,14 +48,22 @@ class _Screen1State extends State<Screen1> {
               Expanded(
                 child: Column(
                   children: [
-                    TextField(
-                      decoration: InputDecoration(
-                        prefixIcon: Icon(Icons.monetization_on),
-                        hintText: "Enter USD",
-                        hintStyle: TextStyle(color: Colors.white),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          filled: true,
+                          fillColor: Colors.white,
+                          focusedBorder: OutlineInputBorder(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                          ),
+                          prefixIcon: Icon(Icons.monetization_on),
+                          hintText: "Enter USD",
+                          hintStyle: TextStyle(color: Colors.black),
+                        ),
+                        style: TextStyle(color: Colors.black),
+                        textAlign: TextAlign.left,
                       ),
-                      style: TextStyle(color: Colors.white),
-                      textAlign: TextAlign.left,
                     ),
                     SizedBox(height: 20),
                     ElevatedButton(
